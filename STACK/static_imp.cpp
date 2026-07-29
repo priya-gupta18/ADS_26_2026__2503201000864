@@ -6,12 +6,11 @@ using namespace std;
 int st[MAXSIZE];
 int top = -1;
 
-// Check Overflow
+
 bool isOverflow() {
     return top == MAXSIZE - 1;
 }
 
-// Check Underflow
 bool isUnderflow() {
     return top == -1;
 }
