@@ -2,19 +2,18 @@
 using namespace std;
 
 void findMinMax(int arr[], int n, int index, int &minVal, int &maxVal) {
-    // Base case
+
     if (index == n)
         return;
 
-    // Update minimum
     if (arr[index] < minVal)
         minVal = arr[index];
 
-    // Update maximum
+    
     if (arr[index] > maxVal)
         maxVal = arr[index];
 
-    // Recursive call
+    
     findMinMax(arr, n, index + 1, minVal, maxVal);
 }
 
